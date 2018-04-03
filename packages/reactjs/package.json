@@ -1,0 +1,24 @@
+{
+  "name": "@taka-sho/reactjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "github.com/taka-sho",
+  "license": "ISC",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:ts": "webpack",
+    "build:pug": "pug *.pug --out dist",
+    "prebuild": "rimraf dist",
+    "test": ""
+  },
+  "dependencies": {
+    "@types/react": "^16.3.1",
+    "@types/react-dom": "^16.0.4",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  }
+}
