@@ -22,6 +22,8 @@
   "scripts": {
     "build": "next build",
     "build:next": "npm run build",
+    "prebuild": "rimraf .next",
+    "prestart": "rimraf .next",
     "start:next": "next",
     "test": ""
   }
