@@ -35,6 +35,7 @@
     "build": "lerna run build",
     "prestart": "npm run build",
     "start": "webpack-dev-server --content-base ./packages/dist",
+    "start:next": "lerna run start:next",
     "test": "lerna run test"
   },
   "workspaces": [
