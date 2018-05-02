@@ -19,10 +19,7 @@
     "@zeit/next-typescript": "^0.1.1"
   },
   "scripts": {
-    "build": "run-p build:*",
-    "build:ts": "webpack",
-    "build:pug": "pug *.pug --out ../dist",
-    "prebuild": "rimraf dist",
+    "build": "next build",
     "start:next": "next",
     "test": ""
   }
