@@ -2,7 +2,7 @@ import * as webpack from 'webpack'
 import * as path from 'path'
 
 export default {
-  mode: 'production',
+  mode: 'development',
   entry: {
     reactjs: path.join(__dirname, '/index.tsx')
   },
