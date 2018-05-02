@@ -1,5 +1,5 @@
 dist
-/packages/nextjs/.next
+.next
 
 # Logs
 logs
