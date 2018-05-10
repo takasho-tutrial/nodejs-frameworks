@@ -2,7 +2,7 @@ import * as webpack from 'webpack'
 import * as path from 'path'
 
 export default {
-  mode: 'development',
+  mode: process.env.NODE_ENV || 'development',
   entry: {
     reactjs: path.join(__dirname, 'src/app/index.tsx')
   },
@@ -14,12 +14,22 @@ export default {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: "awesome-typescript-loader"
+        loader: 'awesome-typescript-loader'
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          scss: 'vue-style-loader!css-loader!sass-loader'
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.vue', '.js'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   },
   target: 'node'
 }
