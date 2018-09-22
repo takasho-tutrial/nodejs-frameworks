@@ -4,7 +4,7 @@ import * as path from 'path'
 export default {
   mode: process.env.NODE_ENV || 'development',
   entry: {
-    reactjs: path.join(__dirname, 'src/app/index.tsx')
+    reactjs: path.join(__dirname, 'src/app/index.ts')
   },
   output: {
     filename: '[name].bundle.js',
