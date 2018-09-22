@@ -9,7 +9,7 @@
   "author": "github.com/taka-sho",
   "license": "ISC",
   "dependencies": {
-    "next": "^6.0.0",
+    "next": "^7.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
