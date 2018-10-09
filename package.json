@@ -15,7 +15,7 @@
   "homepage": "https://github.com/takasho-tutrial/nodejs-frameworks#readme",
   "devDependencies": {
     "@takasho/tslint-config": "0.0.10",
-    "@types/webpack": "4.4.14",
+    "@types/webpack": "4.4.15",
     "awesome-typescript-loader": "5.2.1",
     "lerna": "3.4.1",
     "npm-run-all": "4.1.3",
