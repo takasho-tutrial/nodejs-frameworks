@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "@takasho/tslint-config",
+    "tslint-react"
+  ],
+  "rulesDirectly": [ "tslint-plugin-prettier" ],
+  "rules": {
+    "prettier": [ true, "./.prettierrc" ]
+  },
+  "linterOptions": {
+    "exclude": [ "**/node_modules/**/*.{ts,tsx}" ]
+  }
+}

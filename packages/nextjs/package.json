@@ -23,6 +23,6 @@
     "prebuild": "rimraf .next",
     "prestart": "rimraf .next",
     "start:next": "next",
-    "test": ""
+    "lint": "tslint -c ./../../tslint.json './**/*.{ts,tsx}'"
   }
 }

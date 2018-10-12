@@ -12,20 +12,40 @@
   "bugs": {
     "url": "https://github.com/takasho-tutrial/nodejs-frameworks/issues"
   },
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
   "homepage": "https://github.com/takasho-tutrial/nodejs-frameworks#readme",
   "devDependencies": {
     "@takasho/tslint-config": "0.0.10",
     "@types/webpack": "4.4.16",
     "awesome-typescript-loader": "5.2.1",
+    "husky": "^1.1.2",
     "lerna": "3.4.3",
+    "lint-staged": "^7.3.0",
     "npm-run-all": "4.1.3",
+    "prettier": "^1.14.3",
     "pug": "2.0.3",
     "pug-cli": "1.0.0-alpha6",
     "rimraf": "2.6.2",
     "source-map-loader": "0.2.4",
     "ts-loader": "5.2.1",
     "ts-node": "7.0.1",
-    "tslint": "5.11.0",
+    "tslint": "^5.11.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "tslint-react": "^3.6.0",
     "typescript": "3.1.3",
     "webpack": "4.20.2",
     "webpack-cli": "3.1.2",
@@ -34,13 +54,10 @@
   "scripts": {
     "build": "lerna run build",
     "build:next": "lerna run build:next",
+    "lint": "lerna run lint",
     "prestart": "npm run build",
     "start": "webpack-dev-server --content-base ./packages/dist",
     "start:next": "lerna run start:next",
     "test": "lerna run test"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "private": true
+  }
 }
