@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "@takasho/tslint-config",
+    "tslint-react"
+  ],
+  "rulesDirectly": [ "tslint-plugin-prettier" ],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "semi": false,
+        "tabWidth": 2
+      }
+    ]
+  }
+}

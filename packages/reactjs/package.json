@@ -12,13 +12,14 @@
     "@types/react": "^16.3.1",
     "@types/react-dom": "^16.0.4",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-dom": "^16.3.0",
+    "tslint-react": "^3.6.0"
   },
   "scripts": {
     "build": "run-p build:*",
     "build:ts": "webpack",
     "build:pug": "pug src/templates --out ../dist",
-    "prebuild": "rimraf dist",
-    "test": ""
+    "lint": "tslint './src/**/*.{ts,tsx}'",
+    "prebuild": "rimraf dist"
   }
 }
