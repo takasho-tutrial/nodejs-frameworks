@@ -12,6 +12,21 @@
   "bugs": {
     "url": "https://github.com/takasho-tutrial/nodejs-frameworks/issues"
   },
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
   "homepage": "https://github.com/takasho-tutrial/nodejs-frameworks#readme",
   "devDependencies": {
     "@takasho/tslint-config": "0.0.10",
@@ -43,20 +58,5 @@
     "start": "webpack-dev-server --content-base ./packages/dist",
     "start:next": "lerna run start:next",
     "test": "lerna run test"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "tslint --fix",
-      "git add"
-    ]
   }
 }
