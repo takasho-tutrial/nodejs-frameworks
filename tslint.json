@@ -5,9 +5,9 @@
   ],
   "rulesDirectly": [ "tslint-plugin-prettier" ],
   "rules": {
-    "prettier": [
-      true,
-      "../../../.prettierrc"
-    ]
+    "prettier": [ true, "./.prettierrc" ]
+  },
+  "linterOptions": {
+    "exclude": [ "**/node_modules/**/*.{ts,tsx}" ]
   }
 }
