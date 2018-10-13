@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/takasho-tutrial/nodejs-frameworks#readme",
   "devDependencies": {
-    "@takasho/tslint-config": "0.0.10",
+    "@takasho/tslint-config": "1.0.0",
     "@types/webpack": "4.4.16",
     "awesome-typescript-loader": "5.2.1",
     "husky": "1.1.2",
