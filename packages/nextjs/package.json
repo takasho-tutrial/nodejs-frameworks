@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/next": "7.0.5",
-    "@types/react": "16.7.10",
+    "@types/react": "16.7.11",
     "@zeit/next-typescript": "1.1.1"
   },
   "scripts": {
