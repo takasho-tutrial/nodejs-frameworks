@@ -31,7 +31,6 @@
   "devDependencies": {
     "@takasho/tslint-config": "1.0.0",
     "@types/webpack": "4.4.20",
-    "awesome-typescript-loader": "5.2.1",
     "husky": "1.2.0",
     "lerna": "3.5.1",
     "lint-staged": "8.1.0",
@@ -41,7 +40,7 @@
     "pug-cli": "1.0.0-alpha6",
     "rimraf": "2.6.2",
     "source-map-loader": "0.2.4",
-    "ts-loader": "5.3.1",
+    "ts-loader": "^5.3.1",
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "tslint-plugin-prettier": "2.0.1",
@@ -52,11 +51,13 @@
     "webpack-dev-server": "3.1.10"
   },
   "scripts": {
-    "build": "lerna run build",
-    "build:next": "lerna run build:next",
+    "build": "run-p build:*",
+    "build:html": "pug packages -o dist",
+    "build:js": "webpack -c webpack.config.ts",
     "lint": "lerna run lint",
+    "prebuild": "rimraf dist",
     "prestart": "npm run build",
-    "start": "webpack-dev-server --content-base ./packages/dist",
+    "start": "webpack-dev-server --content-base ./dist",
     "start:next": "lerna run start:next",
     "test": "lerna run test"
   }
