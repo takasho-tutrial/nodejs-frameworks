@@ -1,0 +1,28 @@
+{
+  "name": "@taka-sho/nextjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "keywords": [
+    "nextjs"
+  ],
+  "author": "github.com/taka-sho",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^7.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/next": "7.0.5",
+    "@types/react": "16.7.13",
+    "@zeit/next-typescript": "1.1.1"
+  },
+  "scripts": {
+    "build": "next build",
+    "prebuild": "rimraf .next",
+    "prestart": "rimraf .next",
+    "start:next": "next",
+    "lint": "tslint -c ./../../tslint.json './**/*.{ts,tsx}'"
+  }
+}
