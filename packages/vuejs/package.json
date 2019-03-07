@@ -19,7 +19,7 @@
     "test": ""
   },
   "devDependencies": {
-    "css-loader": "2.1.0",
+    "css-loader": "2.1.1",
     "pug-plain-loader": "1.0.0",
     "raw-loader": "1.0.0",
     "sass-loader": "7.1.0",
