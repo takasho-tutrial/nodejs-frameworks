@@ -11,8 +11,8 @@
   "dependencies": {
     "@types/react": "^16.3.1",
     "@types/react-dom": "^16.0.4",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "scripts": {
     "build": "run-p build:*",
