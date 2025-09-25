@@ -9,7 +9,7 @@
   "author": "github.com/taka-sho",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^3.0.0"
   },
   "scripts": {
     "build": "run-p build:*",
